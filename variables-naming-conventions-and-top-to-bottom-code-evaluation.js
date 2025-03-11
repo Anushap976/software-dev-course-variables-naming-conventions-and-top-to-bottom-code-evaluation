@@ -23,10 +23,10 @@ Things to reflect on:
   - How do clear variable names benefit team collaboration?
   
 */
-
-let a = "Alice";
-let b = 5;
-let c = 20;
-let d = a + " bought " + b + " items for $" + c + ".";
-
-console.log(d);
+let prefixName = 'Mr.';     //added variable for prefix name
+let firstName = "Alice";   // corrected variable name "a" with "firstName"
+let itemCount = 5;         // replaced variable name 'b' with 'itemCount'
+let itemPrice = 4;        // replaced variable name 'c' with 'itemPrice'
+let totalPrice = itemCount * itemPrice; //added variable name totalPrice & calculated totalPrice with 'itemCount' and 'itemPrice'
+let purchaseMessage = prefixName + " " +  firstName + " bought " + itemCount + " items for $" + totalPrice + ".";  // replaced variable name 'd' with 'purchaseMessage'
+console.log(purchaseMessage);
